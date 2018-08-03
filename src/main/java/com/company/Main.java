@@ -11,4 +11,8 @@ public class Main {
         String name = reader.readLine();
         System.out.println("Your name is: " + name);
     }
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
 }
