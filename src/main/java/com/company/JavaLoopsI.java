@@ -3,17 +3,16 @@ package com.company;
 import java.util.Scanner;
 
 public class JavaLoopsI {
-    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int n = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
-        for (int i = 1; i < 11; i++) {
-            int j = n * i;
-            System.out.println(n + " x " + i + " = " + j);
-        }
-
-        scanner.close();
+        Scanner scan = new Scanner(System.in);
+        String i = scan.nextLine();
+        String b = scan.nextLine();
+        String s = scan.nextLine();
+        //scan.close();
+        double d = Double.parseDouble(b);
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
     }
 }
